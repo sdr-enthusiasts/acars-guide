@@ -1,9 +1,9 @@
 # HFDL
 
 ## Introduction
-High Frequency Data Link (HFDL) is a data link in the high frequency range (2 - 21MHz) with virtually global coverage. HFDL is used to convey short data messages over long distances, bi-directonally between ground stations and aircraft using the [propagation effect](https://en.wikipedia.org/wiki/High_frequency) of high frequency radio waves.
+High Frequency Data Link (HFDL) is a data link in the high frequency range (3 - 30MHz) with virtually global coverage. HFDL is used to convey short data messages over long distances, bi-directonally between ground stations and aircraft using the [propagation effect](https://en.wikipedia.org/wiki/High_frequency) of high frequency radio waves.
 
-16 ground stations provide redundant global coverage. There are 12 bands/groups of frequencies in the HFDL range of frequenices and these are covered in more detail in the Frequenices section below
+16 ground stations provide redundant global coverage. There are 12 bands/groups of frequencies in the HFDL range (2 - 21MHz), and these are covered in more detail in the Frequenices section below
 
 ## Hardware
 
