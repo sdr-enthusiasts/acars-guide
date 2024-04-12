@@ -19,7 +19,7 @@ For a basic set up covering a couple of adjacent bands you can get up and runnin
 
 ### Docker installation
 
-- SDR-Enthusiasts (SDR-E) [`docker-dumphfdl`](https://github.com/sdr-enthusiasts/docker-dumphfdl) - a docker wrapper for dumphfdl with a built in auto frequency selector or manual frequecny selection. Assumes some prior knowledge of using [SDR-E](https://github.com/sdr-enthusiasts) docker containers and some familiarity with using soapySDR (no soapySDR installation required).
+- SDR-Enthusiasts (SDR-E) [`docker-dumphfdl`](https://github.com/sdr-enthusiasts/docker-dumphfdl) - a docker wrapper for dumphfdl with a built in auto frequency selector or manual frequency selection. Assumes some prior knowledge of using [SDR-E](https://github.com/sdr-enthusiasts) docker containers and some familiarity with using soapySDR (no soapySDR installation required).
 
 ## Frequencies
 
