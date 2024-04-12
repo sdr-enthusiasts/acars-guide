@@ -11,13 +11,21 @@ For a basic set up covering a couple of adjacent bands you can get up and runnin
 
 ## Software
 
-- [dumpHFDL](https://github.com/szpajder/dumphfdl) - a mature HFDL decoder. Installation instructions are found on the readme of the [dumpHFDL](https://github.com/szpajder/dumphfdl) github repo. There is also a step-by-step guide to installing SoapySDR for SDRPlay and RTL-SDR devices with instrctions on installing dumpHFDL and setting up system services for auto start etc., which can be found [here](https://github.com/rikgale/hfdl_install).
+### Baremetal installation
+
+- [dumpHFDL](https://github.com/szpajder/dumphfdl) - a mature HFDL decoder. Installation instructions are found on the readme of the [dumpHFDL](https://github.com/szpajder/dumphfdl) github repo. There is also a step-by-step guide to installing SoapySDR for SDRPlay and RTL-SDR devices with instructions on installing dumpHFDL and setting up system services for auto start etc., which can be found [here](https://github.com/rikgale/hfdl_install).
 - [xng](https://github.com/airframesio/xng) - a next-generation multi-decoder client for SDRs, written in Rust for Linux, Windows, MacOS.
+
+### Docker installation
+
+- SDR-Enthusiasts (SDR-E) [`docker-dumphfdl`](https://github.com/sdr-enthusiasts/docker-dumphfdl) - a docker wrapper for dumphfdl with a built in auto frequency selector or manual frequecny selection. Assumes some prior knowledge of using [SDR-E](https://github.com/sdr-enthusiasts) docker containers and some familiarity with using soapySDR (no soapySDR installation required).
 
 ## Frequencies
 
 #### 12 Frequency bands.
-Not all bands are active all the time and not all frequencies are in use. Consult the latest system table for current frequencies (WORK IN PROGRESS)
+2, 3, 4, 5,6, 8, 10, 11, 13, 15, 17, 21.
+
+Not all bands are active all the time and not all frequencies within the bands are in use. Consult the latest system table for current frequencies. (WORK IN PROGRESS)
 
 ```
 version = 52;
@@ -46,3 +54,4 @@ stations = (
 - [xng decoder](https://github.com/airframesio/xng) (airframes.io)
 - [Baremetal HFDL installation guide](https://github.com/rikgale/hfdl_install) (rikgale)
 - [Docker HFDL installation guide](https://github.com/sdr-enthusiasts/docker-dumphfdl) (SDR-Enthusiasts)
+- [Frequency selector for single SDR setups](https://github.com/wiedehopf/hfdlscript) (wiedehopf)
