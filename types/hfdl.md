@@ -18,3 +18,9 @@ For a basic set up covering a couple of adjacent bands you can get up and runnin
 
 #### 12 Frequency bands.
 Not all bands are active all the time and not all frequencies are in use. Consult the latest system table for current frequencies (WORK IN PROGRESS)
+
+## Useful links
+- [dumpHFDL decoder](https://github.com/szpajder/dumphfdl) (szpajder)
+- [xng decoder](https://github.com/airframesio/xng) (airframes.io)
+- [Baremetal HFDL installation guide](https://github.com/rikgale/hfdl_install) (rikgale)
+- [Docker HFDL installation guide](https://github.com/sdr-enthusiasts/docker-dumphfdl) (SDR-Enthusiasts)
