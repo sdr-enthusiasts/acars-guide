@@ -15,7 +15,7 @@
 * [VDL-M2](types/vdlm2.md)
 * [HFDL](types/hfdl.md)
 
-## [Installation]((installation/bare-metal-or-docker.md))
+## [Installation](installation/bare-metal-or-docker.md)
 
 ### Docker
 
