@@ -11,30 +11,30 @@ High Frequency Data Link (HFDL) is a data link in the high frequency range (3 - 
 For a basic set up covering a couple of adjacent bands you can get up and running with a Raspberry Pi4, RTL-SDR v4 and a suitable HF antenna (e.g. MLA-30+). For more complete setups covering all bands all of the time a lot of CPU and USB bus bandwidth is required and a Raspberry Pi4/5 will not be sufficient in some usecases. Unless you go with an example of the high-spec computer below expect your HFDL set up to require dedicated hardware with no other SDRs and little or no additional software running on them.
 
 ### SDRs
-- **RTL-SDRv4**. These are a good entry point into the world of HFDL ACARS. Cheap, with a reasonable bandwidth, but they lack the sensitivity of other HF capable devices. NOTE: The RTL-SDRv3 can do HF by direct sampling - don't waste your time.
-- **SDRPlay SDR** e.g. RSP1A/B. More expensive option, however the RSP1A are reasonably priced second hand since the introduction of the RSP1B. Both are good in the HF range with the RSP1B being better. High bandwidth and can cover lots of the bands in one go.
-- **RSP1 clones** Based on the RSP1 architecture these Chinese clones vary in price, quality and longevity. Similar performance to the RSP1A and able to cover several bands at a time.
-- **AirspyHF+ Discovery** Another step up in expense. Very high sensitivity, but low bandwidth. These will only cover one band at a time, however they will pick up messages the the other suggestions will not.
+- **RTL-SDRv4** - These are a good entry point into the world of HFDL ACARS. Cheap, with a reasonable bandwidth, but they lack the sensitivity of other HF capable devices. NOTE: The RTL-SDRv3 can do HF by direct sampling - don't waste your time.
+- **SDRPlay SDR** - e.g. RSP1A/B. More expensive option, however the RSP1A are reasonably priced second hand since the introduction of the RSP1B. Both are good in the HF range with the RSP1B being better. High bandwidth and can cover lots of the bands in one go.
+- **RSP1 clones** - Based on the RSP1 architecture these Chinese clones vary in price, quality and longevity. Similar performance to the RSP1A and able to cover several bands at a time.
+- **AirspyHF+ Discovery** - Another step up in expense. Very high sensitivity, but low bandwidth. These will only cover one band at a time, however they will pick up messages the the other suggestions will not.
 
 ### Computers
 
-- **Raspberry Pi 4** A low powered entry point. Able to handle a single SDRPlay SDR running a 2Mbps sample rate. Or a couple of RLT-SDRv4 at low sample rates. Good place to get started if you wish to monitor only a couple of bands or using a frequency switching script.
-- **Raspberry Pi 5** A mid powered entry point. Able to handle two SDRPlay devices running at 2Mbps or one at 6Mbps sample rate. Able to handle four RTL-SDRv4 covering bands 8 - 21 and with the use of a band switching script bands 2 - 21 (just not all at the same time - 8 - 21 during day time and 2 - 13 during night time).
-- **Trigkey G4 N100** (or similar N100 based mini PC) A higher spec mid entry point. Similar in price point to a Raspberry Pi5 with case and PSU. Able to handle two SDRPlay devices running at 6Mbps sample rate
-- **Old PC with Core i3-10 or better** A high spec, higher cost entry point. Able to handle more than 2 SDRPlay devices. The amount will vary depending on processor and USB bus architecture. Going down this route, get the best specifications you can for the money you are prepared to spend.
+- **Raspberry Pi 4** - A low powered entry point. Able to handle a single SDRPlay SDR running a 2Mbps sample rate. Or a couple of RLT-SDRv4 at low sample rates. Good place to get started if you wish to monitor only a couple of bands or using a frequency switching script.
+- **Raspberry Pi 5** - A mid powered entry point. Able to handle two SDRPlay devices running at 2Mbps or one at 6Mbps sample rate. Able to handle four RTL-SDRv4 covering bands 8 - 21 and with the use of a band switching script bands 2 - 21 (just not all at the same time - 8 - 21 during day time and 2 - 13 during night time).
+- **Trigkey G4 N100** - (or similar N100 based mini PC) A higher spec mid entry point. Similar in price point to a Raspberry Pi5 with case and PSU. Able to handle two SDRPlay devices running at 6Mbps sample rate
+- **Old PC with Core i3-10 or better** - A high spec, higher cost entry point. Able to handle more than 2 SDRPlay devices. The amount will vary depending on processor and USB bus architecture. Going down this route, get the best specifications you can for the money you are prepared to spend.
 
 ### Antennas
 
-- **MLA-30+** An active loop antenna. Try and avoid the clones. 
-- **You-loop** Passive loop antenna.
+- **MLA-30+** - An active loop antenna. Try and avoid the clones. 
+- **You-loop** - Passive loop antenna.
 - **Longwire**
 
 ### Spliters / Multicouplers
 If you wish to use more than one SDR then a splitter or multicoupler will be required. Splitters halve the signal for each split + insertion loss. Multicouplers are powered spliters that output the same signal as recieved and they only incur an insertion loss. The costs of multicouplers range from low to high.
 
-- **Simple SMA splitter wires**. Can be found most places.
-- **Active RF Isolation Distributor Suitable for RF Signal Radio Antenna SDR**. A low cost battery powered spliter from banggood. Can be run with the charging cable in all the time for continuous use . Only has four outputs.
-- **Cross Country Multicoupler**. Expensive, excellent mains-powered multicoupler, 5 outputs.
+- **Simple SMA splitter wires** - Can be found most places.
+- **Active RF Isolation Distributor Suitable for RF Signal Radio Antenna SDR** - A low cost battery powered spliter from banggood. Can be run with the charging cable in all the time for continuous use . Only has four outputs.
+- **Cross Country Multicoupler** - Expensive, excellent mains-powered multicoupler, 5 outputs.
 
 ## Software
 
