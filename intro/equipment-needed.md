@@ -16,7 +16,9 @@ A good internet connection is recommended if you share your data with aggregator
 ## Software Defined Radios and accessories
 
 ### SDRs
+
 As with many of our software products, the simplest solution is to get one or more RTL-SDR compatible SDRs. Make sure that the SDR is suitable for reception in the VHF (130 MHz) band: some SDRs contain filters that make them usable for a specific frequency range only. Unless you are SURE they can be used for ACARS, we would avoid them. Although we do not make recommendations for any specific SDR, here are a few models that we know will work:
+
 * [RTL-SDR Blog v3]([RTL-SDR Blog](https://www.rtl-sdr.com/v3/))
 * [RTL-SDR Blog v4](https://www.rtl-sdr.com/v4/)
 * [ADSBExchange Orange](https://store.adsbexchange.com/collections/frontpage/products/adsbexchange-com-orange-r860-rtl2832u-0-5-ppm-tcxo-sdr-w-amp)
@@ -26,18 +28,21 @@ As with many of our software products, the simplest solution is to get one or mo
 * AirSpy SDRs
 
 Specific SDRs you should avoid include:
+
 * FlightAware Pro+ (blue) - this SDR container a filter that makes it work only for ADSB
 * Radarbox Green or Red SDRs - these also contain filters for ADSB and/or UAT
 * ADSBExchange Blue - this SDR container a filter that makes it work only for ADSB
 
-Each SDR is generally limited to receive 2 MHz of bandwidth once deployed. ACARS and VDL-M2 are generally found in the 130-132 MHz band and the 136-138 MHz band. Also, the ACARS and VDL-M2 receiver applications each expect their own, dedicated SDR(s). As a result, we see many people deploying 2 SDRs: 1 for ACARS reception in the 130-132 MHz band, and 1 for VDL-M2 reception in the 136-138 MHz band. 
+Each SDR is generally limited to receive 2 MHz of bandwidth once deployed. ACARS and VDL-M2 are generally found in the 130-132 MHz band and the 136-138 MHz band. Also, the ACARS and VDL-M2 receiver applications each expect their own, dedicated SDR(s). As a result, we see many people deploying 2 SDRs: 1 for ACARS reception in the 130-132 MHz band, and 1 for VDL-M2 reception in the 136-138 MHz band.
 If you have only 1 SDR you can dedicate to ACARS/VDL-M2 reception, we would recommend dedicating it to VDL-M2 because this is the "newer" protocol to which many airlines are switching. In North America, we see a reasonably close mix between ACARS and VDL-M2 messages, with slightly more ACARS messages than VDL-M2. In Europe, most messaging (around 90%) is done using VDL-M2.
 We have seen people install 3 SDRs
 
 ### Low Noise Amplifiers
+
 Sometimes it's desired to have a LNA (low noise amplifier) between your SDR and your antenna. Some SDRs (for example the [ADSBExchange Orange](https://store.adsbexchange.com/collections/frontpage/products/adsbexchange-com-orange-r860-rtl2832u-0-5-ppm-tcxo-sdr-w-amp)) have a built-in LNA. Other LNAs have can be powered from the SDR: this is called "Bias-T" or "Bias-Tee" powering. If you want to use this, make sure your SDR supports Bias-Tee (the RTL-SDR Blog v3/v4 and the SmarTee family of NooElec supports this).
 
 We don't have a recommendation for a specific LNA model. We have seen people successfully use NooElec LNAs and cheap AliExpress LNAs. You should be careful to assess a few characteristics when using an LNA:
+
 * Noise figure: this is the amount of noise that a LNA adds to the signal, even when nothing is received
 * Overmodulation: some of the cheaper LNAs will suppress your ACARS signal if there is a strong signal close to the one you are trying to receive. You may want to consider a filter in this case; see [below](###Filters)
 * Some of the cheap LNAs appear to insert a lot of noise on the antenna-side of the device. This is normally not an issue, but if you use a splitter to send the signal from a single antenna to multiple devices, please be cognizant that your other devices may receive this noise. In this case, we would recommend inserting the LNA between the splitter and the antenna rather than between the SDR and the splitter.
@@ -70,7 +75,7 @@ If you have multiple SDRs in use for ACARS/VDL-M2/Airband that you want to conne
 
 ## Bill of Materials
 
-This is a summary of the hardware you need to start receiving ACARS and VDL-M2 messages
+This is a summary of the hardware you need to start receiving ACARS and VDL-M2 messages:
 
 * SBC (Raspberry Pi 4, NUC, Dell Optiplex, etc.) with Debian Linux
   * Some SBCs do not have built-in storage, and you will need to add a SD card or SSD
