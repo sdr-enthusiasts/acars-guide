@@ -35,7 +35,7 @@ For a basic set up covering a couple of adjacent bands you can get up and runnin
 If you wish to use more than one SDR then a splitter or multicoupler will be required. Splitters halve the signal for each split + insertion loss. Multicouplers are powered Splitters that output the same signal as received and they only incur an insertion loss. The costs of multicouplers range from low to high.
 
 - **Simple SMA splitter wires** - Can be found most places.
-- **Active RF Isolation Distributor Suitable for RF Signal Radio Antenna SDR** - A low cost battery powered spliter from banggood. Can be run with the charging cable in all the time for continuous use . Only has four outputs.
+- **Active RF Isolation Distributor Suitable for RF Signal Radio Antenna SDR** - A low cost battery powered splitter from Banggood. Can be run with the charging cable in all the time for continuous use . Only has four outputs.
 - **Cross Country Multicoupler** - Expensive, excellent mains-powered multicoupler, 5 outputs.
 
 ## Software
