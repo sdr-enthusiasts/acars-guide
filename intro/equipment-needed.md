@@ -4,7 +4,7 @@
 
 ### Single-board computer
 
-ACARS software can be compiled to run on many types of hardware. To create a stand-alone station that will be running 24/7, most users will choose a single-board computer (like a Raspberry Pi) or a Linux x86 machine (for example, an Intel NUC or Dell OptiPlex). You will want to run a 64-bits Debian Linux version on this machine, for example Raspberry Pi OS, DietPi, or Ubuntu. Alternatively, you can use a Linux laptop or a virtualized environment, as long as this environment reliably handles high-speed USB data. 
+ACARS software can be compiled to run on many types of hardware. To create a stand-alone station that will be running 24/7, most users will choose a single-board computer (like a Raspberry Pi) or a Linux x86 machine (for example, an Intel NUC or Dell OptiPlex). You will want to run a 64-bits Debian Linux version on this machine, for example Raspberry Pi OS, DietPi, or Ubuntu. Alternatively, you can use a Linux laptop or a virtualized environment, as long as this environment reliably handles high-speed USB data.
 
 You can also add your ACARS/VDL-M2 receiver to your existing ADSB device:
 
@@ -35,22 +35,22 @@ The ACARS/VDL-M2 and related receivers generally use the [Pothosware SoapySDR](h
 
 The simplest solution is to get one or more RTL-SDR compatible SDRs. Make sure that the SDR is suitable for reception in the VHF (130 MHz) band: some SDRs contain filters that make them usable for a specific frequency range only. Unless you are SURE they can be used for ACARS, we would avoid them. Although we do not make recommendations for any specific SDR, here are a few models that we know will work:
 
-* [RTL-SDR Blog v3]([RTL-SDR Blog](https://www.rtl-sdr.com/v3/))
-* [RTL-SDR Blog v4](https://www.rtl-sdr.com/v4/)
-* [ADSBExchange Orange](https://store.adsbexchange.com/collections/frontpage/products/adsbexchange-com-orange-r860-rtl2832u-0-5-ppm-tcxo-sdr-w-amp)
-* any of the [NooElec NESDR SDRs](https://www.nooelec.com/store/sdr.html)
-* Cheaper no-name or other brand RTL-SDR devices may work as well. We recommend devices that have a TXCO on board and that have a clock precision of 1 PPM or better
+- [RTL-SDR Blog v3]([RTL-SDR Blog](https://www.rtl-sdr.com/v3/))
+- [RTL-SDR Blog v4](https://www.rtl-sdr.com/v4/)
+- [ADSBExchange Orange](https://store.adsbexchange.com/collections/frontpage/products/adsbexchange-com-orange-r860-rtl2832u-0-5-ppm-tcxo-sdr-w-amp)
+- any of the [NooElec NESDR SDRs](https://www.nooelec.com/store/sdr.html)
+- Cheaper no-name or other brand RTL-SDR devices may work as well. We recommend devices that have a TXCO on board and that have a clock precision of 1 PPM or better
 
 Specific SDRs you should avoid include because they contain band-pass filters that block ACARS/VDL-M2 frequencies:
 
-* FlightAware Pro+ (blue)
-* Radarbox Green or Red SDRs
-* ADSBExchange Blue
+- FlightAware Pro+ (blue)
+- Radarbox Green or Red SDRs
+- ADSBExchange Blue
 
 Additionally, we've seen users use the following (non-RTL-SDR) devices:
 
-* SDRPlay devices like the RSP-1A and RSP-1B - these work "OK" as they need an additional driver to be installed; for some users, this driver has had stability issues that caused the station to lose connectivity at random intervals. 
-* AirSpy SDRs - recommended if you want to do HFDL (shortwave ACARS reception)
+- SDRPlay devices like the RSP-1A and RSP-1B - these work "OK" as they need an additional driver to be installed; for some users, this driver has had stability issues that caused the station to lose connectivity at random intervals.
+- AirSpy SDRs - recommended if you want to do HFDL (shortwave ACARS reception)
 
 ### How many SDRs do you need
 
@@ -63,9 +63,9 @@ Sometimes it's desired to have a LNA (low noise amplifier) between your SDR and 
 
 We don't have a recommendation for a specific LNA model. We have seen people successfully use NooElec LNAs and cheap AliExpress LNAs. You should be careful to assess a few characteristics when using an LNA:
 
-* Noise figure: this is the amount of noise that a LNA adds to the signal, even when nothing is received
-* Overmodulation: some of the cheaper LNAs will suppress your ACARS signal if there is a strong signal close to the one you are trying to receive. You may want to consider a filter in this case; see [below](###Filters)
-* Some of the cheap LNAs appear to insert a lot of noise on the antenna-side of the device. This is normally not an issue, but if you use a splitter to send the signal from a single antenna to multiple devices, please be cognizant that your other devices may receive this noise. In this case, we would recommend inserting the LNA between the splitter and the antenna rather than between the SDR and the splitter.
+- Noise figure: this is the amount of noise that a LNA adds to the signal, even when nothing is received
+- Overmodulation: some of the cheaper LNAs will suppress your ACARS signal if there is a strong signal close to the one you are trying to receive. You may want to consider a filter in this case; see [below](###Filters)
+- Some of the cheap LNAs appear to insert a lot of noise on the antenna-side of the device. This is normally not an issue, but if you use a splitter to send the signal from a single antenna to multiple devices, please be cognizant that your other devices may receive this noise. In this case, we would recommend inserting the LNA between the splitter and the antenna rather than between the SDR and the splitter.
 
 Your LNA must be powered. Some LNAs have a micro-USB connector to supply power, other LNAs have can be powered from the SDR: this is called "Bias-T" or "Bias-Tee" powering. If you want to use this, make sure your SDR supports Bias-Tee (the RTL-SDR Blog v3/v4 and the SmarTee family of NooElec support this).
 
@@ -93,7 +93,7 @@ If you are willing to accept some losses, you can use a 75 Ohms (white TV) coax 
 
 Note that you cannot use your ADSB antenna for ACARS/VDL-M2 reception!
 
-As always, the key to a successful station is your antenna. The better your antenna, the higher your antenna is mounter, and the fewer obstructions (houses, mountains, etc.) around your antenna, the better your reception will be. 
+As always, the key to a successful station is your antenna. The better your antenna, the higher your antenna is mounter, and the fewer obstructions (houses, mountains, etc.) around your antenna, the better your reception will be.
 
 ### Use of splitters
 
@@ -103,11 +103,11 @@ If you have multiple SDRs in use for ACARS/VDL-M2/Airband that you want to conne
 
 This is a summary of the hardware you need to start receiving ACARS and VDL-M2 messages. This is for a "Minimally Viable Setup", receiving ACARS and VDL-M2 data directly from aircraft in the 130-138 MHz band:
 
-* SBC (Raspberry Pi 4, NUC, Dell Optiplex, etc.) with Debian Linux
-  * Some SBCs do not have built-in storage, and you will need to add a SD card or SSD
-  * A power supply for your SBC
-* SDR(s) - 1 for ACARS, 1 for VDL-M2
-* Optionally - a LNA
-* Optionally - a splitter so you can use 1 antenna with both SDRs
-* Antenna for 130-138 MHz
-* Coax to connect the antenna to your station
+- SBC (Raspberry Pi 4, NUC, Dell Optiplex, etc.) with Debian Linux
+  - Some SBCs do not have built-in storage, and you will need to add a SD card or SSD
+  - A power supply for your SBC
+- SDR(s) - 1 for ACARS, 1 for VDL-M2
+- Optionally - a LNA
+- Optionally - a splitter so you can use 1 antenna with both SDRs
+- Antenna for 130-138 MHz
+- Coax to connect the antenna to your station
