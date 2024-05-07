@@ -73,7 +73,7 @@ Your LNA must be powered. Some LNAs have a micro-USB connector to supply power, 
 
 For most stations, filters aren't necessary; however if you live close to an FM radio transmitter or in a dense urban environment, a filter may help avoiding overmodulation, especially when combined with a LNA. In this case, you may consider adding a filter that suppresses the FM Radio band. Note that ACARS and VDLM uses the 130 MHz - 137 MHz frequency band and your filter should NOT filter out these frequencies.
 
-Note -- the [NooElectric Sawbird+ NOAA](https://www.nooelec.com/store/sdr/sdr-addons/sawbird/sawbird-plus-noaa-308.html) is NOT suitable for use with ACARS, but may work with VDLM-2 reception.
+Note -- the [NooElec Sawbird+ NOAA](https://www.nooelec.com/store/sdr/sdr-addons/sawbird/sawbird-plus-noaa-308.html) is NOT suitable for use with ACARS, but may work with VDL-M2 reception.
 
 ### Antenna
 
@@ -103,7 +103,7 @@ If you have multiple SDRs in use for ACARS/VDL-M2/Airband that you want to conne
 
 This is a summary of the hardware you need to start receiving ACARS and VDL-M2 messages. This is for a "Minimally Viable Setup", receiving ACARS and VDL-M2 data directly from aircraft in the 130-138 MHz band:
 
-- SBC (Raspberry Pi 4, NUC, Dell Optiplex, etc.) with Debian Linux
+- SBC (Raspberry Pi 4, NUC, Dell OptiPlex, etc.) with Debian Linux
   - Some SBCs do not have built-in storage, and you will need to add a SD card or SSD
   - A power supply for your SBC
 - SDR(s) - 1 for ACARS, 1 for VDL-M2
