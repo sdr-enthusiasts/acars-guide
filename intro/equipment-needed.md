@@ -64,7 +64,7 @@ Sometimes it's desired to have a LNA (low noise amplifier) between your SDR and 
 We don't have a recommendation for a specific LNA model. We have seen people successfully use NooElec LNAs and cheap AliExpress LNAs. You should be careful to assess a few characteristics when using an LNA:
 
 - Noise figure: this is the amount of noise that a LNA adds to the signal, even when nothing is received
-- Overmodulation: some of the cheaper LNAs will suppress your ACARS signal if there is a strong signal close to the one you are trying to receive. You may want to consider a filter in this case; see [below](#Filters)
+- Overmodulation: some of the cheaper LNAs will suppress your ACARS signal if there is a strong signal close to the one you are trying to receive. You may want to consider a filter in this case; see [below](#filters)
 - Some of the cheap LNAs appear to insert a lot of noise on the antenna-side of the device. This is normally not an issue, but if you use a splitter to send the signal from a single antenna to multiple devices, please be cognizant that your other devices may receive this noise. In this case, we would recommend inserting the LNA between the splitter and the antenna rather than between the SDR and the splitter.
 
 Your LNA must be powered. Some LNAs have a micro-USB connector to supply power, other LNAs have can be powered from the SDR: this is called "Bias-T" or "Bias-Tee" powering. If you want to use this, make sure your SDR supports Bias-Tee (the RTL-SDR Blog v3/v4 and the SmarTee family of NooElec support this).
