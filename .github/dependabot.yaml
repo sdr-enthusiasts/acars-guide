@@ -8,13 +8,4 @@ updates:
     schedule:
       interval: "weekly"
     assignees:
-      - "mikenye"
-      - "fredclausen"
-
-  # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    assignees:
       - "fredclausen"
