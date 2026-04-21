@@ -15,9 +15,9 @@ You can also add your ACARS/VDL-M2 receiver to your existing ADSB device:
 - You can safely configure a Raspberry Pi 3B+ as "stand-alone" for only ACARS and VDL-M2, as long as that device doesn't do too many extra, CPU-intensive tasks
 
 A monitor and keyboard for your SBC are optional - once your OS is installed, you can configure, run, and monitor your station from the command-line or via a web browser.
-You do not need to install a Desktop on your Linux machine*.
+You do not need to install a Desktop on your Linux machine\*.
 
-*) An exception to this is if you want to use your station for Iridium or Inmarsat ACARS reception - you will need to determine the frequency deviation of your device using a graphics tool that can only run on a desktop. However, this is a "far advanced" use case and most users won't need this initially
+\*) An exception to this is if you want to use your station for Iridium or Inmarsat ACARS reception - you will need to determine the frequency deviation of your device using a graphics tool that can only run on a desktop. However, this is a "far advanced" use case and most users won't need this initially
 
 ### SD-Cards
 

@@ -42,7 +42,7 @@ If you wish to use more than one SDR then a splitter or multicoupler will be req
 
 ### Bare metal installation
 
-- [dumpHFDL](https://github.com/szpajder/dumphfdl) - a mature HFDL decoder. Installation instructions are found on the readme of the [dumpHFDL](https://github.com/szpajder/dumphfdl) github repo. There is also a step-by-step guide to installing SoapySDR for SDRPlay and RTL-SDR devices with instructions on installing dumpHFDL and setting up system services for auto start etc., which can be found [here](https://github.com/rikgale/hfdl_install).
+- [dumpHFDL](https://github.com/szpajder/dumphfdl) - a mature HFDL decoder. Installation instructions are found on the readme of the [dumpHFDL](https://github.com/szpajder/dumphfdl) github repo. There is also a step-by-step guide to installing SoapySDR for SDRPlay and RTL-SDR devices with instructions on installing dumpHFDL and setting up system services for auto start etc., which can be found [in rikegal's repo](https://github.com/rikgale/hfdl_install).
 - [xng](https://github.com/airframesio/xng) - a next-generation multi-decoder client for SDRs, written in Rust for Linux, Windows, MacOS.
 
 ### Docker installation

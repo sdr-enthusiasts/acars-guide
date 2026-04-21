@@ -8,11 +8,11 @@ Typically, if you have limited SDRs available, you will want to focus on VDL-M2 
 
 ## Hardware
 
-* SDR. Any SDR that can receive VHF frequencies will work. The RTL-SDR is a popular choice.
-* Antenna. A VHF antenna is required to receive ACARS messages.
+- SDR. Any SDR that can receive VHF frequencies will work. The RTL-SDR is a popular choice.
+- Antenna. A VHF antenna is required to receive ACARS messages.
 
 ## Software
 
-* `acarsdec`. `acarsdec` is a popular ACARS decoder that can be used to decode ACARS messages. It is available for Linux, MacOS, and Windows. Depending on your choice of operating system you may need to compile it yourself. If you prefer the "easy button" there is an available [Docker image](https://github.com/sdr-enthusiasts/docker-acarsdec) that you can use.
+- `acarsdec`. `acarsdec` is a popular ACARS decoder that can be used to decode ACARS messages. It is available for Linux, MacOS, and Windows. Depending on your choice of operating system you may need to compile it yourself. If you prefer the "easy button" there is an available [Docker image](https://github.com/sdr-enthusiasts/docker-acarsdec) that you can use.
 
 ## Frequencies
